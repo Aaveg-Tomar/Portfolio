@@ -15,15 +15,15 @@ function Home() {
                 <div className={darkMode ? "dark" : ""}>
                     <main className=" bg-white px-10  dark:bg-gray-800">
                         <section >
-                            <nav className=" py-10 mb-12 flex justify-between">
-                                <img className=" w-12 h-12 rounded-full" src="/assests/main_logo.png" />
+                            <nav className=" pt-10 mb-12 flex justify-between">
+                                <img className=" w-13 h-12 rounded-full" src="/assests/letter-a.png" />
                                 <ul className="flex items-center">
                                     <l1><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" /></l1>
-                                    <l1> <a className=" bg-gradient-to-r from-cyan-500 text-black px-4 py-2 rounded-md ml-4" href="https://drive.google.com/drive/folders/1gBt-kbYafJ9Nf4lw4dq3zSGEG34eBcHw?usp=share_link"> Resume</a></l1>
+                                    <l1> <a className=" bg-gradient-to-r from-cyan-500 text-black px-4 py-2 rounded-md ml-4" href="https://drive.google.com/file/d/1YTLpblSACERDOuvV2ExaTwYCaxIgh2nm/view?usp=sharing"> Resume</a></l1>
                                 </ul>
                             </nav>
-                            <div className=" flex justify-center m-0 p-0 drop-shadow-2xl ">
-                                <img src="/assests/logo1.gif" className=" rounded-t-full w-40 m-0 p-0 " />
+                            <div className=" flex justify-center m-0 p-0  ">
+                                <img src="/assests/main.svg" className=" w-80 m-0 p-0 " />
                             </div>
                             <div className=" text-center p-10 pt-2 pb-3 ">
                                 <h2 className=" text-5xl text-teal-400 font-semibold">Aaveg Tomar</h2>
@@ -33,8 +33,8 @@ function Home() {
                                 </div>
                             </div>
                             <div className=" text-4xl flex justify-center pb-5 space-x-5">
-                                <a className=" hover:bg-gray-500" href="https://www.linkedin.com/in/aaveg-tomar/"><AiFillLinkedin /></a>
-                                <a className=" hover:bg-gray-500" href="https://github.com/Aaveg-Tomar"><AiFillGithub /></a>
+                                <a className=" hover:bg-gray-500" href="https://www.linkedin.com/in/aaveg-tomar/ " target='_a'><AiFillLinkedin /></a>
+                                <a className=" hover:bg-gray-500" href="https://github.com/Aaveg-Tomar" target='_a'><AiFillGithub /></a>
                             </div>
                         </section>
                         <section>
@@ -62,13 +62,13 @@ function Home() {
                                     <h4 className="py-4 pt-7 text-teal-600">Coding Platform</h4>
                                     <div className=" flex justify-center space-x-8">
                                         <div className=" text-3xl ">
-                                            <a href="https://www.codechef.com/users/a_aveg"><SiCodechef /></a>
+                                            <a href="https://www.codechef.com/users/a_aveg" target='_a'><SiCodechef /></a>
                                         </div>
                                         <div className=" text-3xl ">
-                                            <a href="https://leetcode.com/tomaraaveg/"><SiLeetcode /></a>
+                                            <a href="https://leetcode.com/tomaraaveg/" target='_a'><SiLeetcode /></a>
                                         </div>
                                         <div className=" text-3xl ">
-                                            <a href="https://www.hackerrank.com/tomaraaveg"><SiHackerrank /></a>
+                                            <a href="https://www.hackerrank.com/tomaraaveg" target='_a'><SiHackerrank /></a>
                                         </div>
                                     </div>
 
@@ -114,25 +114,35 @@ function Home() {
                                 </div>
                             </div>
                         </section>
-                        <section className=" flex justify-center">
-                    <div className=" bg-green-700  w-11/12  lg:w-9/12 text-center rounded-2xl shadow-lg grid grid-cols-1 md:grid-cols-3 justify-center items-center py-14 px-5">
-                        <div className="text-3xl font-bold text-font p-2 text-white">Start Project</div>
-                        <div className=" text-lg lg:text-xl font-light py-8">Interested in working together ? We should queue up a chat.</div>
-                        <div>
-                            <a className=' border border-black rounded-xl p-2 hover:bg-green-800'>
-                                <Link to="/contact">Let's do this ?</Link>
-                            </a>
-                        </div>
+                        <section>
+                            <div className=" flex justify-center pb-10">
+                                <div className=" bg-green-700  w-11/12  lg:w-9/12 text-center rounded-2xl shadow-lg grid grid-cols-1 md:grid-cols-3 justify-center items-center py-14 px-5">
+                                    <div className="text-3xl font-bold text-font p-2 text-white">Start Project</div>
+                                    <div className=" text-lg lg:text-xl font-light py-8">Interested in working together ? We should queue up a chat.</div>
+                                    <div>
+                                        <a className=' border border-black rounded-xl p-2 hover:bg-green-800'>
+                                            <Link to="/contact">Let's do this ?</Link>
+                                        </a>
+                                    </div>
 
-                    </div>
-                </section>
+                                </div>
+                            </div>
+                            <div className=' bg-black h-64 -mt-28 -ml-10 w-110 -mr-10'>
+                                <div className=' flex justify-center pt-20'>
+                                    <img className=" w-13 h-12 rounded-full" src="/assests/letter-a.png" />
+                                </div>
+                                <div className=' block text-center text-white pt-2'>Living , Learning & Leveling</div>
+                                <div className='block text-center text-white pt-1'>up one day at a time.</div>
+                                <div>
+                                <div className=' flex justify-center p-2'>
+                                    <a href=' mailto: tomaraaveg@gmail.com'target='_a'><img className='w-8 flex justify-center m-2' src="/assests/gmail.png"/></a>
+                                    <a href=''><img className='w-8 flex justify-center m-2' src="/assests/instagram.png"/></a>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
                     </main>
                 </div>
-               
-                
-
-
-
             </div>
         </>
     );

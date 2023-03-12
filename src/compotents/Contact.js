@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Contact = () => {
     return (
         <div>
-            <Link to={"/"}><img className=" w-12 h-12 rounded-full m-2" src="/assests/main_logo.png" /></Link>
+            <Link to={"/"}><img className=" w-12 h-12 rounded-full m-2" src="/assests/letter-a.png" /></Link>
             <div className="relative flex flex-col justify-center min-h-screen overflow-hidden ">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-black ring-indigo-100 lg:max-w-xl">
                 <h1 className="text-3xl font-semibold text-center ">
