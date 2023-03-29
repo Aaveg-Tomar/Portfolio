@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': "url('../public/assests/bg-2.svg')",
+        'hero2':"url('../public/assests/bg-1.svg')",
+      },
       fontFamily:{
         burtons:"burtons",
       },
