@@ -21,7 +21,6 @@ function Home() {
                                 <img className=" w-13 h-12 rounded-full" src="/assests/letter-a.png" alt='logo'/>
                                 <ul className="flex items-center">
                                     <l1><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" /></l1>
-                                    <l1> <a className=" bg-gradient-to-r from-cyan-500 text-black px-4 py-2 rounded-md ml-4" href="https://drive.google.com/file/d/1YTLpblSACERDOuvV2ExaTwYCaxIgh2nm/view?usp=sharing"> Resume</a></l1>
                                 </ul>
                             </nav>
                             <div className=" flex justify-center m-0 p-0  ">
