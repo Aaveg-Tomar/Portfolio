@@ -5,6 +5,8 @@ import { SiLeetcode, SiCodechef, SiHackerrank, SiJavascript, SiTailwindcss } fro
 import { DiJava, DiReact } from 'react-icons/di';
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import { Cards } from './compotents/Cards';
+
 
 function Home() {
     const [darkMode, setDarkMode] = useState(false);
@@ -16,14 +18,14 @@ function Home() {
                     <main className=" bg-white px-10  dark:bg-gray-800">
                         <section >
                             <nav className=" pt-10 mb-12 flex justify-between">
-                                <img className=" w-13 h-12 rounded-full" src="/assests/letter-a.png" />
+                                <img className=" w-13 h-12 rounded-full" src="/assests/letter-a.png" alt='logo'/>
                                 <ul className="flex items-center">
                                     <l1><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" /></l1>
                                     <l1> <a className=" bg-gradient-to-r from-cyan-500 text-black px-4 py-2 rounded-md ml-4" href="https://drive.google.com/file/d/1YTLpblSACERDOuvV2ExaTwYCaxIgh2nm/view?usp=sharing"> Resume</a></l1>
                                 </ul>
                             </nav>
                             <div className=" flex justify-center m-0 p-0  ">
-                                <img src="/assests/main.svg" className=" w-80 m-0 p-0 " />
+                                <img src="/assests/main.svg" className=" w-80 m-0 p-0 " alt='banner' />
                             </div>
                             <div className=" text-center p-10 pt-2 pb-3 ">
                                 <h2 className=" text-5xl text-teal-400 font-semibold">Aaveg Tomar</h2>
@@ -41,7 +43,7 @@ function Home() {
                             <div className="lg:flex gap-10">
                                 <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
                                     <div className=" flex justify-center rounded-full ">
-                                        <img src="/assests/logo3.webp" className=" rounded-3xl" />
+                                        <img src="/assests/logo3.webp" className=" rounded-3xl"  alt='programming'/>
                                     </div>
 
                                     <h3 className="text-lg font-medium pt-8   ">
@@ -76,7 +78,7 @@ function Home() {
                                 </div>
                                 <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                                     <div className=" flex justify-center">
-                                        <img src=" assests/logo4.png" className=" w-80" />
+                                        <img src=" assests/logo4.png" className=" w-80" alt='development' />
                                     </div>
                                     <h3 className="text-lg font-medium pt-8 pb-2 ">
                                         Development
@@ -114,6 +116,10 @@ function Home() {
                                 </div>
                             </div>
                         </section>
+                       <section>
+                        <Cards/>
+                       </section>
+                       
                         <section>
                             <div className=" flex justify-center pb-10">
                                 <div className=" bg-green-700  w-11/12  lg:w-9/12 text-center rounded-2xl shadow-lg grid grid-cols-1 md:grid-cols-3 justify-center items-center py-14 px-5">
@@ -129,14 +135,14 @@ function Home() {
                             </div>
                             <div className=' bg-black h-64 -mt-28 -ml-10 w-110 -mr-10'>
                                 <div className=' flex justify-center pt-20'>
-                                    <img className=" w-13 h-12 rounded-full" src="/assests/letter-a.png" />
+                                    <img className=" w-13 h-12 rounded-full" src="/assests/letter-a.png" alt='logo' />
                                 </div>
                                 <div className=' block text-center text-white pt-2'>Living , Learning & Leveling</div>
                                 <div className='block text-center text-white pt-1'>up one day at a time.</div>
                                 <div>
                                 <div className=' flex justify-center p-2'>
-                                    <a href=' mailto: tomaraaveg@gmail.com'target='_a'><img className='w-8 flex justify-center m-2' src="/assests/gmail.png"/></a>
-                                    <a href=''><img className='w-8 flex justify-center m-2' src="/assests/instagram.png"/></a>
+                                    <a href=' mailto: tomaraaveg@gmail.com'target='_a'><img className='w-8 flex justify-center m-2' src="/assests/gmail.png" alt='mail'/></a>
+                                    <a href='https://www.instagram.com/_.___chaudhary/'><img className='w-8 flex justify-center m-2' src="/assests/instagram.png" alt='insta'/></a>
                                 </div>
                             </div>
                             </div>
